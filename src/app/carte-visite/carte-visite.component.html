@@ -1,0 +1,24 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <h1>Form</h1>
+      <label for="firstName">Nom:</label>
+      <input type="text" formControlName="firstName" id="firstName">
+    </div>
+    <div>
+      <label for="lastName">Prenom:</label>
+      <input type="text" formControlName="lastName" id="lastName">
+    </div>
+   
+    <button type="submit" >Submit</button>
+  </form>
+  
+
+
+
+<div>
+    <h2>Carte Visite</h2>
+    <p>Nom: {{ carte.nom }}</p>
+    <p>Prenom: {{ carte.prenom }}</p>
+
+    </div>
+    
